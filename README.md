@@ -18,7 +18,6 @@ yarn add decode-qrcode
 const decodeQrcode = require('decode-qrcode')
 
 // input should be File Object or image url
-
 decodeQrcode(input)
 //=> return promise
 ```
