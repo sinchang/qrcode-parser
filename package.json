@@ -1,0 +1,60 @@
+{
+  "name": "decode-qrcode",
+  "version": "0.0.0",
+  "description": "decode qrcode image to original text",
+  "repository": {
+    "url": "sinchang/decode-qrcode",
+    "type": "git"
+  },
+  "main": "dist/decode-qrcode.cjs.js",
+  "files": ["dist"],
+  "scripts": {
+    "test:cov": "jest --coverage && npm run lint",
+    "test": "npm run lint && jest",
+    "lint": "standard",
+    "prepublishOnly": "npm run build",
+    "build": "bili",
+    "example": "poi",
+    "build:example": "poi build"
+  },
+  "author": "sinchang <sinchangwen@gmail.com>",
+  "license": "MIT",
+  "poi": {
+    "entry": "example/index.js",
+    "dist": "example/dist",
+    "homepage": "/"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "standard": {
+    "globals": ["FileReader", "XMLHttpRequest"]
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "env",
+            {
+              "targets": {
+                "node": "current"
+              }
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "jsqr": "^1.0.4",
+    "upng-js": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.4.0",
+    "bili": "^2.2.3",
+    "jest-cli": "^22.1.4",
+    "poi": "^9.6.13",
+    "standard": "^10.0.0"
+  }
+}
