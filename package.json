@@ -1,6 +1,6 @@
 {
   "name": "decode-qrcode",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "decode qrcode image to original text",
   "repository": {
     "url": "sinchang/decode-qrcode",
@@ -12,10 +12,10 @@
     "test:cov": "jest --coverage && npm run lint",
     "test": "npm run lint && jest",
     "lint": "standard",
-    "prepublishOnly": "npm run build",
     "build": "bili --format cjs,es,umd,umd-min",
     "example": "poi",
-    "build:example": "poi build"
+    "build:example": "poi build",
+    "semantic-release": "semantic-release"
   },
   "author": "sinchang <sinchangwen@gmail.com>",
   "license": "MIT",
@@ -51,6 +51,7 @@
     "jest-cli": "^22.1.4",
     "poi": "^9.6.13",
     "poi-preset-babel-minify": "^1.0.3",
+    "semantic-release": "^15.1.4",
     "standard": "^10.0.0"
   }
 }
