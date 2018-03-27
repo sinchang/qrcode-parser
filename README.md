@@ -4,7 +4,7 @@
 
 ## Exemple
 
-👉 [DEMO]()
+👉 [DEMO](decode-qrcode.netlify.com)
 
 ## Install
 

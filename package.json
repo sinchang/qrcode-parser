@@ -15,7 +15,8 @@
     "prepublishOnly": "npm run build",
     "build": "bili",
     "example": "poi",
-    "build:example": "poi build"
+    "build:example": "poi build",
+    "prepublish": "npm run build"
   },
   "author": "sinchang <sinchangwen@gmail.com>",
   "license": "MIT",
