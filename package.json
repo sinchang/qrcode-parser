@@ -13,18 +13,12 @@
     "test": "npm run lint && jest",
     "lint": "standard",
     "prepublishOnly": "npm run build",
-    "build": "bili",
+    "build": "bili --format cjs,es,umd,umd-min",
     "example": "poi",
-    "build:example": "poi build",
-    "prepublish": "npm run build"
+    "build:example": "poi build"
   },
   "author": "sinchang <sinchangwen@gmail.com>",
   "license": "MIT",
-  "poi": {
-    "entry": "example/index.js",
-    "dist": "example/dist",
-    "homepage": "/"
-  },
   "jest": {
     "testEnvironment": "jsdom"
   },
@@ -53,9 +47,10 @@
   },
   "devDependencies": {
     "babel-preset-env": "^1.4.0",
-    "bili": "^2.2.3",
+    "bili": "^3.0.13",
     "jest-cli": "^22.1.4",
     "poi": "^9.6.13",
+    "poi-preset-babel-minify": "^1.0.3",
     "standard": "^10.0.0"
   }
 }
