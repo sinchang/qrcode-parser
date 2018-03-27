@@ -3,7 +3,7 @@ import UPNG from 'upng-js'
 
 export default async (input, cb) => {
   if (!input) {
-    throw new Error('needed File Object or image url')
+    throw new Error('need File Object or image url')
   }
 
   let blob = null
@@ -19,7 +19,7 @@ export default async (input, cb) => {
       xhr.onload = async () => {
         if (xhr.status >= 200 && xhr.status < 300) {
           blob = xhr.response // xhr.response is now a blob object
-          blob2text(blob).then(ret => resolve(ret))
+          blob2text(blob).then(ret => resolve(ret)).catch(e => reject(e))
         } else {
           reject(xhr.statusText)
         }
@@ -39,11 +39,10 @@ function blob2text (blob) {
       const img = UPNG.decode(buffer) // put ArrayBuffer of the PNG file into UPNG.decode
       const rgba = UPNG.toRGBA8(img)[0] // UPNG.toRGBA8 returns array of frames, size: width * height * 4 bytes.
       const code = jsQR(new Uint8ClampedArray(rgba), img.width, img.height)
-      // console.log(code)
       if (code) {
         resolve(code)
       } else {
-        reject(new Error('decode failure'))
+        reject(new Error('decode failed'))
       }
     })
   })
