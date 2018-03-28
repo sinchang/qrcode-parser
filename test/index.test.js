@@ -1,19 +1,19 @@
 /* eslint-env jest */
 
-import decodeQrcode from '../src'
+import qrcodeParser from '../src'
 
 const imageUrl = 'https://i.loli.net/2018/03/27/5aba1f615633c.png'
 
 test('main', () => {
-  expect(typeof decodeQrcode).toBe('function')
+  expect(typeof qrcodeParser).toBe('function')
 })
 
 test('empty params', () => {
-  decodeQrcode().catch(e => expect(e))
+  expect(qrcodeParser).toThrow('need File object or image url')
 })
 
 test('should ok', () => {
-  decodeQrcode(imageUrl).then(result => {
+  qrcodeParser(imageUrl).then(result => {
     expect(result.data).toEqual('1111')
   })
 })

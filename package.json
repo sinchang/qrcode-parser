@@ -1,12 +1,13 @@
 {
-  "name": "decode-qrcode",
+  "name": "qrcode-parser",
   "version": "0.0.0-development",
-  "description": "decode qrcode image to original text",
+  "description":
+    "A pure javascript QR code reading library, accept File object or image url.",
   "repository": {
-    "url": "sinchang/decode-qrcode",
+    "url": "sinchang/qrcode-parser",
     "type": "git"
   },
-  "main": "dist/decode-qrcode.cjs.js",
+  "main": "dist/qrcode-parser.cjs.js",
   "files": ["dist"],
   "scripts": {
     "test:cov": "jest --coverage && npm run lint",

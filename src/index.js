@@ -1,9 +1,9 @@
 import jsQR from 'jsqr'
 import UPNG from 'upng-js'
 
-export default async (input, cb) => {
+export default (input, cb) => {
   if (!input) {
-    throw new Error('need File Object or image url')
+    throw new Error('need File object or image url')
   }
 
   let blob = null
@@ -16,7 +16,7 @@ export default async (input, cb) => {
       const xhr = new XMLHttpRequest()
       xhr.open('GET', input)
       xhr.responseType = 'blob' // force the HTTP response, response-type header to be blob
-      xhr.onload = async () => {
+      xhr.onload = () => {
         if (xhr.status >= 200 && xhr.status < 300) {
           blob = xhr.response // xhr.response is now a blob object
           blob2text(blob).then(ret => resolve(ret)).catch(e => reject(e))

@@ -1,24 +1,26 @@
-# decode-qrcode
+# qrcode-parser
 
-[![NPM version](https://img.shields.io/npm/v/decode-qrcode.svg?style=flat)](https://npmjs.com/package/decode-qrcode) [![NPM downloads](https://img.shields.io/npm/dm/decode-qrcode.svg?style=flat)](https://npmjs.com/package/decode-qrcode) [![CircleCI](https://circleci.com/gh/sinchang/decode-qrcode/tree/master.svg?style=shield)](https://circleci.com/gh/sinchang/decode-qrcode/tree/master) [![codecov](https://codecov.io/gh/sinchang/decode-qrcode/branch/master/graph/badge.svg)](https://codecov.io/gh/sinchang/decode-qrcode)
+[![NPM version](https://img.shields.io/npm/v/qrcode-parser.svg?style=flat)](https://npmjs.com/package/qrcode-parser) [![NPM downloads](https://img.shields.io/npm/dm/qrcode-parser.svg?style=flat)](https://npmjs.com/package/qrcode-parser) [![CircleCI](https://circleci.com/gh/sinchang/qrcode-parser/tree/master.svg?style=shield)](https://circleci.com/gh/sinchang/qrcode-parser/tree/master) [![codecov](https://codecov.io/gh/sinchang/qrcode-parser/branch/master/graph/badge.svg)](https://codecov.io/gh/sinchang/qrcode-parser)
 
-## Exemple
+A pure javascript QR code reading library, accept File object or image url.
 
-👉 [DEMO](https://decode-qrcode.netlify.com)
+## Example
+
+👉 [DEMO](https://qrcode-parser.netlify.com)
 
 ## Install
 
 ```bash
-yarn add decode-qrcode
+yarn add qrcode-parser
 ```
 
 ## Usage
 
 ```js
-const decodeQrcode = require('decode-qrcode')
+const qrcodeParser = require('qrcode-parser')
 
-// input should be File Object or image url
-decodeQrcode(input)
+// input should be File object or image url
+qrcodeParser(input)
 //=> return promise
 ```
 
@@ -32,7 +34,7 @@ decodeQrcode(input)
 
 ## Author
 
-**decode-qrcode** © [sinchang](https://github.com/sinchang), Released under the [MIT](./LICENSE) License.<br>
-Authored and maintained by sinchang with help from contributors ([list](https://github.com/sinchang/decode-qrcode/contributors)).
+**qrcode-parser** © [sinchang](https://github.com/sinchang), Released under the [MIT](./LICENSE) License.<br>
+Authored and maintained by sinchang with help from contributors ([list](https://github.com/sinchang/qrcode-parser/contributors)).
 
 > [sinchang.me](https://sinchang.me) · GitHub [@sinchang](https://github.com/sinchang) · Twitter [@sinchangwen](https://twitter.com/sinchangwen)
