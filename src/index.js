@@ -1,7 +1,7 @@
 import jsQR from 'jsqr'
 import UPNG from 'upng-js'
 
-export default (input, cb) => {
+export default input => {
   if (!input) {
     throw new Error('need File object or image url')
   }
