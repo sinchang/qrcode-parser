@@ -1,6 +1,6 @@
 # qrcode-parser
 
-[![NPM version](https://img.shields.io/npm/v/qrcode-parser.svg?style=flat)](https://npmjs.com/package/qrcode-parser) [![NPM downloads](https://img.shields.io/npm/dm/qrcode-parser.svg?style=flat)](https://npmjs.com/package/qrcode-parser) [![CircleCI](https://circleci.com/gh/sinchang/qrcode-parser/tree/master.svg?style=shield)](https://circleci.com/gh/sinchang/qrcode-parser/tree/master) [![codecov](https://codecov.io/gh/sinchang/qrcode-parser/branch/master/graph/badge.svg)](https://codecov.io/gh/sinchang/qrcode-parser)
+[![NPM version](https://img.shields.io/npm/v/qrcode-parser.svg?style=flat)](https://npmjs.com/package/qrcode-parser) [![NPM downloads](https://img.shields.io/npm/dm/qrcode-parser.svg?style=flat)](https://npmjs.com/package/qrcode-parser) [![CircleCI](https://circleci.com/gh/sinchang/qrcode-parser/tree/master.svg?style=shield)](https://circleci.com/gh/sinchang/qrcode-parser/tree/master)
 
 A pure javascript QR code reading library, accept File object or image url.
 
