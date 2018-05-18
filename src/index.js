@@ -52,10 +52,10 @@ function blob2text (blob) {
   })
 }
 
-function isBase64(str) {
+function isBase64 (str) {
   try {
-      return btoa(atob(str)) == str;
+    return btoa(atob(str)) === str
   } catch (err) {
-      return false;
+    return false
   }
 }

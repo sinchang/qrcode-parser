@@ -24,7 +24,7 @@
     "testEnvironment": "jsdom"
   },
   "standard": {
-    "globals": ["FileReader", "XMLHttpRequest"]
+    "globals": ["FileReader", "XMLHttpRequest", "atob", "Blob", "btoa"]
   },
   "babel": {
     "env": {
