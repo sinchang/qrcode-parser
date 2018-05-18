@@ -1,5 +1,6 @@
 import jsQR from 'jsqr'
 import UPNG from 'upng-js'
+import b64toBlob from './b64toBlob'
 
 export default input => {
   if (!input) {
@@ -10,6 +11,9 @@ export default input => {
 
   if (Object.prototype.toString.call(input) === '[object File]') {
     blob = input.slice()
+    return blob2text(blob)
+  } else if (isBase64(input)) {
+    blob = b64toBlob(input)
     return blob2text(blob)
   } else {
     return new Promise((resolve, reject) => {
@@ -46,4 +50,12 @@ function blob2text (blob) {
       }
     })
   })
+}
+
+function isBase64(str) {
+  try {
+      return btoa(atob(str)) == str;
+  } catch (err) {
+      return false;
+  }
 }
