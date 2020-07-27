@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/qrcode-parser.svg?style=flat)](https://npmjs.com/package/qrcode-parser) [![NPM downloads](https://img.shields.io/npm/dm/qrcode-parser.svg?style=flat)](https://npmjs.com/package/qrcode-parser) [![CircleCI](https://circleci.com/gh/sinchang/qrcode-parser/tree/master.svg?style=shield)](https://circleci.com/gh/sinchang/qrcode-parser/tree/master)
 
-A pure javascript QR code reading library, accept File object or image url.
+A pure javascript QR code reading library, accept File object, image url, image base64.
 
 ## Example
 
@@ -17,10 +17,10 @@ yarn add qrcode-parser
 ## Usage
 
 ```js
-const qrcodeParser = require('qrcode-parser')
+const qrcodeParser = require("qrcode-parser");
 
 // input should be File object or image url
-qrcodeParser(input)
+qrcodeParser(input);
 //=> return promise
 ```
 
