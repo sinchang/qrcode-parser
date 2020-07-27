@@ -4,7 +4,7 @@ import b64toBlob from './b64toBlob'
 
 export default input => {
   if (!input) {
-    throw new Error('need File object or image url')
+    throw new Error('input must be one of File object, image url, image base64')
   }
 
   let blob = null

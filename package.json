@@ -1,21 +1,22 @@
 {
   "name": "qrcode-parser",
   "version": "0.0.0-development",
-  "description":
-    "A pure javascript QR code reading library, accept File object or image url.",
+  "description": "A pure javascript QR code reading library, accept File object, image url, image base64.",
   "repository": {
     "url": "sinchang/qrcode-parser",
     "type": "git"
   },
   "main": "dist/qrcode-parser.cjs.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test:cov": "jest --coverage && npm run lint",
     "test": "npm run lint && jest",
     "lint": "standard",
-    "build": "bili --format cjs,es,umd,umd-min",
-    "example": "poi",
-    "build:example": "poi build",
+    "build": "bili --format cjs,es,umd,umd-min --moduleName qrcodeParser",
+    "example": "poi --serve",
+    "build:example": "poi --prod",
     "semantic-release": "semantic-release"
   },
   "author": "sinchang <sinchangwen@gmail.com>",
@@ -24,7 +25,13 @@
     "testEnvironment": "jsdom"
   },
   "standard": {
-    "globals": ["FileReader", "XMLHttpRequest", "atob", "Blob", "btoa"]
+    "globals": [
+      "FileReader",
+      "XMLHttpRequest",
+      "atob",
+      "Blob",
+      "btoa"
+    ]
   },
   "babel": {
     "env": {
@@ -43,16 +50,17 @@
     }
   },
   "dependencies": {
-    "jsqr": "^1.0.4",
+    "jsqr": "^1.3.1",
     "upng-js": "^2.1.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.4.0",
-    "bili": "^3.0.13",
-    "jest-cli": "^22.1.4",
-    "poi": "^9.6.13",
+    "babel-preset-env": "^1.7.0",
+    "bili": "^5.0.5",
+    "jest-cli": "^26.1.0",
+    "mime": "^2.4.6",
+    "poi": "^12.9.0",
     "poi-preset-babel-minify": "^1.0.3",
-    "semantic-release": "^15.1.4",
-    "standard": "^10.0.0"
+    "semantic-release": "^17.1.1",
+    "standard": "^14.3.4"
   }
 }
