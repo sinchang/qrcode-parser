@@ -5,5 +5,5 @@ module.exports = {
     html: {
       template: './index.ejs'
     }
-  },
+  }
 }

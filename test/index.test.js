@@ -1,18 +1,19 @@
+/* eslint-env jest */
+/* global File */
+import qrcodeParser from '../src'
 const fs = require('fs')
 const path = require('path')
 const mine = require('mime')
 
-import qrcodeParser from '../src'
-
-function createFile(file_path) {
-  const { mtimeMs: lastModified } = fs.statSync(file_path)
+function createFile (filePath) {
+  const { mtimeMs: lastModified } = fs.statSync(filePath)
 
   return new File(
-    [fs.readFileSync(file_path)],
-    path.basename(file_path),
+    [fs.readFileSync(filePath)],
+    path.basename(filePath),
     {
       lastModified,
-      type: mine.getType(file_path) || '',
+      type: mine.getType(filePath) || ''
     }
   )
 }
@@ -34,7 +35,7 @@ test('input is image url', async () => {
 })
 
 test('input is image base64', async () => {
-  const base64Str = fs.readFileSync(testImagePath, {encoding: 'base64'})
+  const base64Str = fs.readFileSync(testImagePath, { encoding: 'base64' })
   const res = await qrcodeParser(base64Str)
   expect(res.data).toBe('hello')
 })
