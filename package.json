@@ -60,7 +60,7 @@
     "mime": "^2.4.6",
     "poi": "^12.9.0",
     "poi-preset-babel-minify": "^1.0.3",
-    "semantic-release": "^17.1.1",
+    "semantic-release": "^17.2.3",
     "standard": "^14.3.4"
   }
 }
