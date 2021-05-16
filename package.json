@@ -50,17 +50,17 @@
     }
   },
   "dependencies": {
-    "jsqr": "^1.3.1",
+    "jsqr": "^1.4.0",
     "upng-js": "^2.1.0"
   },
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
     "bili": "^5.0.5",
-    "jest-cli": "^26.1.0",
-    "mime": "^2.4.6",
-    "poi": "^12.9.0",
+    "jest-cli": "^26.6.3",
+    "mime": "^2.5.2",
+    "poi": "^12.10.3",
     "poi-preset-babel-minify": "^1.0.3",
-    "semantic-release": "^17.1.1",
-    "standard": "^14.3.4"
+    "semantic-release": "^17.4.3",
+    "standard": "^16.0.3"
   }
 }
