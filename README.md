@@ -17,11 +17,11 @@ yarn add qrcode-parser
 ## Usage
 
 ```js
-const qrcodeParser = require("qrcode-parser");
+import qrcodeParser from "qrcode-parser";
 
-// input should be File object or image url
+// input should be File object, image url, image base64
 qrcodeParser(input);
-//=> return promise
+// => return promise
 ```
 
 ## Contributing
