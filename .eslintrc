@@ -1,0 +1,12 @@
+{
+    "env": {
+        "jest": true
+    },
+    "extends": [
+        "@antfu"
+    ],
+    "plugins": [
+        "jest"
+    ],
+    "rules": {}
+}

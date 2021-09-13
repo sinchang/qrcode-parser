@@ -6,61 +6,51 @@
     "url": "sinchang/qrcode-parser",
     "type": "git"
   },
-  "main": "dist/qrcode-parser.cjs.js",
   "files": [
     "dist"
   ],
+  "main": "./dist/qrcodeParser.js",
+  "umd:main": "./dist/qrcodeParser.umd.js",
+  "module": "./dist/qrcodeParser.es.js",
+  "exports": "./dist/qrcodeParser.modern.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test:cov": "jest --coverage && npm run lint",
-    "test": "npm run lint && jest",
-    "lint": "standard",
-    "build": "bili --format cjs,es,umd,umd-min --moduleName qrcodeParser",
-    "example": "poi --serve",
-    "build:example": "poi --prod",
+    "prepublishOnly": "npm run build",
+    "test:cov": "jest --coverage",
+    "test": "jest",
+    "lint": "eslint \"{src,test}/**/*.ts\"",
+    "example": "vite",
+    "build": "microbundle && npm run build:umd",
+    "build:umd": "microbundle -f umd --external none",
     "semantic-release": "semantic-release"
   },
   "author": "sinchang <sinchangwen@gmail.com>",
   "license": "MIT",
   "jest": {
-    "testEnvironment": "jsdom"
-  },
-  "standard": {
-    "globals": [
-      "FileReader",
-      "XMLHttpRequest",
-      "atob",
-      "Blob",
-      "btoa"
-    ]
-  },
-  "babel": {
-    "env": {
-      "test": {
-        "presets": [
-          [
-            "env",
-            {
-              "targets": {
-                "node": "current"
-              }
-            }
-          ]
-        ]
-      }
-    }
+    "testEnvironment": "jsdom",
+    "preset": "ts-jest",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$"
   },
   "dependencies": {
     "jsqr": "^1.4.0",
+    "remove": "^0.1.5",
     "upng-js": "^2.1.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.7.0",
-    "bili": "^5.0.5",
-    "jest-cli": "^26.6.3",
+    "@antfu/eslint-config": "^0.8.2",
+    "@types/jest": "^27.0.1",
+    "@types/mime": "^2.0.3",
+    "@types/node": "^16.9.1",
+    "@types/upng-js": "^2.1.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "jest": "^27.2.0",
+    "jest-environment-jsdom": "^27.2.0",
+    "microbundle": "^0.13.3",
     "mime": "^2.5.2",
-    "poi": "^12.10.3",
-    "poi-preset-babel-minify": "^1.0.3",
     "semantic-release": "^17.4.3",
-    "standard": "^16.0.3"
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.3",
+    "vite": "^2.5.6"
   }
 }
