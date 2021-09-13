@@ -11,56 +11,34 @@
     "dist"
   ],
   "scripts": {
-    "test:cov": "jest --coverage && npm run lint",
-    "test": "npm run lint && jest",
-    "lint": "standard",
+    "test:cov": "jest --coverage",
+    "test": "jest",
     "build": "bili --format cjs,es,umd,umd-min --moduleName qrcodeParser",
-    "example": "poi --serve",
-    "build:example": "poi --prod",
+    "example": "vite",
+    "build:example": "tsc && vite build",
     "semantic-release": "semantic-release"
   },
   "author": "sinchang <sinchangwen@gmail.com>",
   "license": "MIT",
   "jest": {
-    "testEnvironment": "jsdom"
-  },
-  "standard": {
-    "globals": [
-      "FileReader",
-      "XMLHttpRequest",
-      "atob",
-      "Blob",
-      "btoa"
-    ]
-  },
-  "babel": {
-    "env": {
-      "test": {
-        "presets": [
-          [
-            "env",
-            {
-              "targets": {
-                "node": "current"
-              }
-            }
-          ]
-        ]
-      }
-    }
+    "testEnvironment": "jsdom",
+    "preset": "ts-jest",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$"
   },
   "dependencies": {
     "jsqr": "^1.4.0",
     "upng-js": "^2.1.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.7.0",
-    "bili": "^5.0.5",
-    "jest-cli": "^26.6.3",
+    "@types/jest": "^27.0.1",
+    "@types/mime": "^2.0.3",
+    "@types/node": "^16.9.1",
+    "@types/upng-js": "^2.1.2",
+    "jest": "^27.2.0",
     "mime": "^2.5.2",
-    "poi": "^12.10.3",
-    "poi-preset-babel-minify": "^1.0.3",
     "semantic-release": "^17.4.3",
-    "standard": "^16.0.3"
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.3",
+    "vite": "^2.5.6"
   }
 }
