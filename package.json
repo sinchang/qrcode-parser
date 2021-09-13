@@ -27,6 +27,7 @@
   },
   "author": "sinchang <sinchangwen@gmail.com>",
   "license": "MIT",
+  "keywords": ["qrcode", "base64", "parser"],
   "jest": {
     "testEnvironment": "jsdom",
     "preset": "ts-jest",
