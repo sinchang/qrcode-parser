@@ -1,6 +1,6 @@
 {
   "name": "qrcode-parser",
-  "version": "0.0.0-development",
+  "version": "2.0.0-beta.0",
   "description": "A pure javascript QR code reading library, accept File object, image url, image base64.",
   "repository": {
     "url": "sinchang/qrcode-parser",
