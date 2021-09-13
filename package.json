@@ -20,6 +20,7 @@
     "test": "jest",
     "lint": "eslint \"{src,test}/**/*.ts\"",
     "example": "vite",
+    "build:example": "vite build",
     "build": "microbundle && npm run build:umd",
     "build:umd": "microbundle -f umd --external none",
     "semantic-release": "semantic-release"
