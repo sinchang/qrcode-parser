@@ -27,7 +27,11 @@
   },
   "author": "sinchang <sinchangwen@gmail.com>",
   "license": "MIT",
-  "keywords": ["qrcode", "base64", "parser"],
+  "keywords": [
+    "qrcode",
+    "base64",
+    "parser"
+  ],
   "jest": {
     "testEnvironment": "jsdom",
     "preset": "ts-jest",
@@ -35,7 +39,6 @@
   },
   "dependencies": {
     "jsqr": "^1.4.0",
-    "remove": "^0.1.5",
     "upng-js": "^2.1.0"
   },
   "devDependencies": {

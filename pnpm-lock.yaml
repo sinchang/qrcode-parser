@@ -13,7 +13,6 @@ specifiers:
   jsqr: ^1.4.0
   microbundle: ^0.13.3
   mime: ^2.5.2
-  remove: ^0.1.5
   semantic-release: ^17.4.3
   ts-jest: ^27.0.5
   typescript: ^4.4.3
@@ -22,7 +21,6 @@ specifiers:
 
 dependencies:
   jsqr: 1.4.0
-  remove: 0.1.5
   upng-js: 2.1.0
 
 devDependencies:
@@ -2663,12 +2661,6 @@ packages:
       redeyed: 2.1.1
     dev: true
 
-  /chainsaw/0.0.9:
-    resolution: {integrity: sha1-EaBRAtHEx4W20EFdM21aOhYSkT4=}
-    dependencies:
-      traverse: 0.3.9
-    dev: false
-
   /chalk/1.1.3:
     resolution: {integrity: sha1-qBFcVeSnAv5NFQq9OHKCKn4J/Jg=}
     engines: {node: '>=0.10.0'}
@@ -4124,12 +4116,6 @@ packages:
     dependencies:
       function-bind: 1.1.1
     dev: true
-
-  /hashish/0.0.4:
-    resolution: {integrity: sha1-bWC8b/r3Ebav1g5CbQd5iAFOZVQ=}
-    dependencies:
-      traverse: 0.6.6
-    dev: false
 
   /hook-std/2.0.0:
     resolution: {integrity: sha512-zZ6T5WcuBMIUVh49iPQS9t977t7C0l7OtHrpeMb5uk48JdflRX0NSFvCekfYNmGQETnLq9W/isMyHl69kxGi8g==}
@@ -6669,12 +6655,6 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /remove/0.1.5:
-    resolution: {integrity: sha1-CV/9gn1lyfQa2X0z5BanWBEHmVU=}
-    dependencies:
-      seq: 0.3.5
-    dev: false
-
   /require-directory/2.1.1:
     resolution: {integrity: sha1-jGStX9MNqxyXbiNE/+f3kqam30I=}
     engines: {node: '>=0.10.0'}
@@ -6924,13 +6904,6 @@ packages:
     dependencies:
       lru-cache: 6.0.0
     dev: true
-
-  /seq/0.3.5:
-    resolution: {integrity: sha1-rgKvOkJHk9jMvyEtaRdODFTf/jg=}
-    dependencies:
-      chainsaw: 0.0.9
-      hashish: 0.0.4
-    dev: false
 
   /serialize-javascript/4.0.0:
     resolution: {integrity: sha512-GaNA54380uFefWghODBWEGisLZFj00nS5ACs6yHa9nLqlLpVLO8ChDGeKRjZnV4Nh4n0Qi7nhYZD/9fCPzEqkw==}
@@ -7387,12 +7360,9 @@ packages:
       punycode: 2.1.1
     dev: true
 
-  /traverse/0.3.9:
-    resolution: {integrity: sha1-cXuPIgzAu3tE5AUUwisui7xw2Lk=}
-    dev: false
-
   /traverse/0.6.6:
     resolution: {integrity: sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=}
+    dev: true
 
   /trim-newlines/3.0.1:
     resolution: {integrity: sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==}
