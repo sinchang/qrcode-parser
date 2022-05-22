@@ -28,8 +28,5 @@ jobs:
           name: upload coverage
           command: bash <(curl -s https://codecov.io/bash)
       - run:
-          name: build
-          command: npm run build
-      - run:
           name: release
           command: npm run semantic-release || true

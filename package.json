@@ -19,7 +19,7 @@
     "prepublishOnly": "npm run build",
     "test:cov": "jest --coverage",
     "test": "jest",
-    "lint": "eslint \"{src,test}/**/*.ts\"",
+    "lint": "eslint \"{src,test,example}/**/*.ts\"",
     "example": "vite",
     "build:example": "vite build",
     "build": "microbundle && npm run build:umd",
