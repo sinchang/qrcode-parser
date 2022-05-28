@@ -40,13 +40,13 @@
     "upng-js": "^2.1.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.8.2",
+    "@antfu/eslint-config": "^0.24.2",
     "@types/mime": "^2.0.3",
     "@types/node": "^16.9.1",
     "@types/upng-js": "^2.1.2",
     "c8": "^7.11.3",
-    "eslint": "^7.32.0",
-    "eslint-plugin-jest": "^26.3.0",
+    "eslint": "^8.16.0",
+    "eslint-plugin-jest": "26.3.0",
     "jsdom": "^19.0.0",
     "microbundle": "^0.13.3",
     "mime": "^2.5.2",

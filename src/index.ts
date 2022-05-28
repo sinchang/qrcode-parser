@@ -3,7 +3,7 @@ import { blob2text, isBase64, isUrl } from './utils'
 
 export type Input = string | Blob
 
-export default async(input: Input): Promise<string> => {
+export default async (input: Input): Promise<string> => {
   let blob: Blob
 
   if (

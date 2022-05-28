@@ -1,7 +1,7 @@
 import jsQR from 'jsqr'
 import UPNG from 'upng-js'
 
-export const blob2text = async(blob: Blob): Promise<string> => {
+export const blob2text = async (blob: Blob): Promise<string> => {
   return await new Promise((resolve, reject) => {
     const myReader: FileReader = new FileReader()
     myReader.readAsArrayBuffer(blob)
@@ -38,10 +38,12 @@ export const isBase64 = (str: string): boolean => {
 
 // Copy from https://github.com/sindresorhus/is-url-superb
 export const isUrl = (string: string): boolean => {
-  if (typeof string !== 'string') throw new TypeError('Expected a string')
+  if (typeof string !== 'string')
+    throw new TypeError('Expected a string')
 
   string = string.trim()
-  if (string.includes(' ')) return false
+  if (string.includes(' '))
+    return false
 
   try {
     new URL(string) // eslint-disable-line no-new
