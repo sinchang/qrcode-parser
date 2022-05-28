@@ -7,7 +7,6 @@ specifiers:
   '@types/upng-js': ^2.1.2
   c8: ^7.11.3
   eslint: ^8.16.0
-  eslint-plugin-jest: 26.3.0
   jsdom: ^19.0.0
   jsqr: ^1.4.0
   microbundle: ^0.13.3
@@ -29,7 +28,6 @@ devDependencies:
   '@types/upng-js': 2.1.2
   c8: 7.11.3
   eslint: 8.16.0
-  eslint-plugin-jest: 26.3.0_taf6sgd5dn6277cakoyhqr7mmq
   jsdom: 19.0.0
   microbundle: 0.13.3
   mime: 2.5.2
@@ -3305,26 +3303,6 @@ packages:
       object.values: 1.1.5
       resolve: 1.22.0
       tsconfig-paths: 3.14.1
-    dev: true
-
-  /eslint-plugin-jest/26.3.0_taf6sgd5dn6277cakoyhqr7mmq:
-    resolution: {integrity: sha512-Nst+lIIzCwVap2zxzEv+c0+ESvubEu96SyYuByYMpSQhtKF31DqQQ5PTprT2zbBvSLBAhgDXYWo69p4n+Bc/Ew==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^5.0.0
-      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-      jest: '*'
-    peerDependenciesMeta:
-      '@typescript-eslint/eslint-plugin':
-        optional: true
-      jest:
-        optional: true
-    dependencies:
-      '@typescript-eslint/utils': 5.26.0_taf6sgd5dn6277cakoyhqr7mmq
-      eslint: 8.16.0
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
     dev: true
 
   /eslint-plugin-jsonc/2.3.0_eslint@8.16.0:
