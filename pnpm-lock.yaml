@@ -4,7 +4,6 @@ specifiers:
   '@antfu/eslint-config': ^0.24.2
   '@types/mime': ^2.0.3
   '@types/node': ^16.9.1
-  '@types/upng-js': ^2.1.2
   c8: ^7.11.3
   eslint: ^8.16.0
   jsdom: ^19.0.0
@@ -13,19 +12,16 @@ specifiers:
   mime: ^2.5.2
   semantic-release: ^19.0.3
   typescript: ^4.4.3
-  upng-js: ^2.1.0
   vite: ^2.5.6
-  vitest: ^0.12.9
+  vitest: ^0.12.10
 
 dependencies:
   jsqr: 1.4.0
-  upng-js: 2.1.0
 
 devDependencies:
   '@antfu/eslint-config': 0.24.2_taf6sgd5dn6277cakoyhqr7mmq
   '@types/mime': 2.0.3
   '@types/node': 16.9.1
-  '@types/upng-js': 2.1.2
   c8: 7.11.3
   eslint: 8.16.0
   jsdom: 19.0.0
@@ -34,7 +30,7 @@ devDependencies:
   semantic-release: 19.0.3
   typescript: 4.4.3
   vite: 2.5.7
-  vitest: 0.12.9_c8@7.11.3+jsdom@19.0.0
+  vitest: 0.12.10_c8@7.11.3+jsdom@19.0.0
 
 packages:
 
@@ -1797,10 +1793,6 @@ packages:
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
-    dev: true
-
-  /@types/upng-js/2.1.2:
-    resolution: {integrity: sha512-sxCnLDEmGFDcnrdSMml3/mDSbfSAvt86Ld32J6Ac75Og7GzzmwHbUnJNTue74tfQC/3PPD/W0jG2dQuF9v6UOg==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.26.0_6traba46ocm3ruvxcpinogniuy:
@@ -3847,7 +3839,7 @@ packages:
     dev: true
 
   /get-func-name/2.0.0:
-    resolution: {integrity: sha1-6td0q+5y4gQJQzoGY2YCPdaIekE=}
+    resolution: {integrity: sha512-Hm0ixYtaSZ/V7C8FJrtZIuBBI+iSgL+1Aq82zSu8VQNB4S3Gk8e7Qs3VwBDJAhmRZcFqkl3tQu36g/Foh5I5ig==}
     dev: true
 
   /get-intrinsic/1.1.1:
@@ -5370,10 +5362,6 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
     dev: true
-
-  /pako/1.0.11:
-    resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
-    dev: false
 
   /parent-module/1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
@@ -6935,12 +6923,6 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /upng-js/2.1.0:
-    resolution: {integrity: sha512-d3xzZzpMP64YkjP5pr8gNyvBt7dLk/uGI67EctzDuVp4lCZyVMo0aJO6l/VDlgbInJYDY6cnClLoBp29eKWI6g==}
-    dependencies:
-      pako: 1.0.11
-    dev: false
-
   /uri-js/4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
@@ -7016,8 +6998,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.12.9_c8@7.11.3+jsdom@19.0.0:
-    resolution: {integrity: sha512-1NtyUANS72Qw5PwYvoztk067NX4fSiis2xQxhByOWS33eL2er/yupHyLxlBCOkF2ANe0dLFRvT1GVb+nczL5aw==}
+  /vitest/0.12.10_c8@7.11.3+jsdom@19.0.0:
+    resolution: {integrity: sha512-TVoI6fM7rZ1zIMDjcviY8Dg5XIaPqBwDweaI3oUwvWqUz68cbM49CIHNMkF+UVoSjl94wXiBRdNhsT4ekgWuGA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:

@@ -1,16 +1,24 @@
 import jsQR from 'jsqr'
-import UPNG from 'upng-js'
 
-export const blob2text = async (blob: Blob): Promise<string> => {
-  return await new Promise((resolve, reject) => {
-    const myReader: FileReader = new FileReader()
-    myReader.readAsArrayBuffer(blob)
-    myReader.addEventListener('loadend', () => {
-      const buffer = myReader.result
+export const blob2text = (blob: Blob): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    const image = new Image()
+    image.src = URL.createObjectURL(blob)
+    image.addEventListener('load', () => {
       try {
-        const img = UPNG.decode(buffer as ArrayBuffer)
-        const rgba = UPNG.toRGBA8(img)[0]
-        const code = jsQR(new Uint8ClampedArray(rgba), img.width, img.height)
+        const canvas = document.createElement('canvas')
+        canvas.width = image.width
+        canvas.height = image.height
+        const context = canvas.getContext('2d')
+
+        if (!context)
+          return reject(new Error('decode failed'))
+
+        context.imageSmoothingEnabled = false
+        context.drawImage(image, 0, 0)
+        const imageData = context.getImageData(0, 0, image.width, image.height)
+
+        const code = jsQR(imageData.data, image.width, image.height)
         if (code !== null)
           return resolve(code.data)
         else

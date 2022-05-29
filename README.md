@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/qrcode-parser.svg?style=flat)](https://npmjs.com/package/qrcode-parser) [![NPM downloads](https://img.shields.io/npm/dm/qrcode-parser.svg?style=flat)](https://npmjs.com/package/qrcode-parser) [![CircleCI](https://circleci.com/gh/sinchang/qrcode-parser/tree/master.svg?style=shield)](https://circleci.com/gh/sinchang/qrcode-parser/tree/master)
 
-A pure javascript QR code decoding library, accept PNG File object, PNG image url, image base64.
+A pure javascript QR code decoding library, accept File object, image url, image base64.
 
 ## Example
 
