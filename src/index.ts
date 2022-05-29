@@ -1,9 +1,9 @@
 import b64toBlob from './b64toBlob'
 import { blob2text, isBase64, isUrl } from './utils'
 
-export type Input = string | Blob
+export type Input = string | File
 
-export default async (input: Input): Promise<string> => {
+export default (input: Input): Promise<string> => {
   let blob: Blob
 
   if (
@@ -18,7 +18,7 @@ export default async (input: Input): Promise<string> => {
     return blob2text(blob)
   }
   else if (typeof input === 'string' && isUrl(input)) {
-    return await new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest()
       xhr.open('GET', input)
       xhr.responseType = 'blob' // force the HTTP response, response-type header to be blob

@@ -21,12 +21,12 @@ jobs:
       - run:
           name: lint
           command: yarn lint
-      - run:
-          name: test
-          command: yarn test:cov
-      - run:
-          name: upload coverage
-          command: bash <(curl -s https://codecov.io/bash)
+      # - run:
+      #     name: test
+      #     command: yarn test:cov
+      # - run:
+      #     name: upload coverage
+      #     command: bash <(curl -s https://codecov.io/bash)
       - run:
           name: release
           command: npm run semantic-release || true
