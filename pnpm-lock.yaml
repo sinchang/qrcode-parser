@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@antfu/eslint-config': ^0.24.2
   '@playwright/test': ^1.31.2
-  '@types/node': ^16.9.1
+  '@types/node': ^18.0.0
   eslint: ^8.16.0
   jsqr: ^1.4.0
   microbundle: ^0.15.0
@@ -17,12 +17,12 @@ dependencies:
 devDependencies:
   '@antfu/eslint-config': 0.24.2_taf6sgd5dn6277cakoyhqr7mmq
   '@playwright/test': 1.31.2
-  '@types/node': 16.9.1
+  '@types/node': 18.14.6
   eslint: 8.16.0
   microbundle: 0.15.1
   semantic-release: 19.0.3
   typescript: 4.4.3
-  vite: 4.1.4_@types+node@16.9.1
+  vite: 4.1.4_@types+node@18.14.6
 
 packages:
 
@@ -1717,7 +1717,7 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      '@types/node': 16.9.1
+      '@types/node': 18.14.6
       playwright-core: 1.31.2
     optionalDependencies:
       fsevents: 2.3.2
@@ -1952,8 +1952,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/16.9.1:
-    resolution: {integrity: sha512-QpLcX9ZSsq3YYUUnD3nFDY8H7wctAhQj/TFKL8Ya8v5fMm3CFXxo8zStsLAl780ltoYoo1WvKUVGBQK+1ifr7g==}
+  /@types/node/18.14.6:
+    resolution: {integrity: sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -1967,7 +1967,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 16.9.1
+      '@types/node': 18.14.6
     dev: true
 
   /@types/retry/0.12.1:
@@ -4297,7 +4297,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 16.9.1
+      '@types/node': 18.14.6
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -6614,7 +6614,7 @@ packages:
     resolution: {integrity: sha512-/juG65kTL4Cy2su4P8HjtkTxk6VmJDiOPBufWniqQ6wknac6jNiXS9vU+hO3wgusiyqWlzTbVHi0dyJqRONg3w==}
     dev: true
 
-  /vite/4.1.4_@types+node@16.9.1:
+  /vite/4.1.4_@types+node@18.14.6:
     resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6639,7 +6639,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 16.9.1
+      '@types/node': 18.14.6
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
