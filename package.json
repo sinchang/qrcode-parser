@@ -23,8 +23,7 @@
     "example": "vite dev --host --port 8000",
     "build:example": "vite build",
     "build": "microbundle && npm run build:umd",
-    "build:umd": "microbundle -f umd --external none",
-    "semantic-release": "semantic-release"
+    "build:umd": "microbundle -f umd --external none"
   },
   "author": "sinchang <sinchangwen@gmail.com>",
   "license": "MIT",

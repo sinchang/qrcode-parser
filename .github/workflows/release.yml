@@ -1,13 +1,15 @@
-name: Playwright Tests
+name: Release
 on:
   push:
-    branches: [main, master]
-  pull_request:
+    branches: [master]
 
 jobs:
-  test:
-    timeout-minutes: 60
+  release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write #  to be able to publish a GitHub release
+      issues: write #  to be able to comment on released issues
+      pull-requests: write #  to be able to comment on released pull requests
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -41,18 +43,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Lint
-        run: pnpm lint
-
-      - name: Install Playwright Browsers
-        run: pnpm exec playwright install --with-deps
-
-      - name: Run Playwright tests
-        run: pnpm exec playwright test
-
-      - uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 30
+      - name: Release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.SEMANTIC_RELEASE_BOT_NPM_TOKEN }}
