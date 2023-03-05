@@ -19,7 +19,6 @@ yarn add qrcode-parser
 ```js
 import qrcodeParser from "qrcode-parser";
 
-// input should be PNG File object, PNG image url, image base64
 qrcodeParser(input);
 // => return promise
 ```
