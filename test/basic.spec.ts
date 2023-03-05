@@ -12,7 +12,7 @@ test('upload jpeg', async ({ page }) => {
   const fileInput = await page.$('#file')
   await fileInput!.setInputFiles('test/test2.jpeg')
 
-  await expect(page.getByText('http://www.utem.edu.my/myweb/mohdfadzli/mitc2013.htm')).toBeVisible()
+  await expect(page.locator('#content3')).toHaveText('http://www.utem.edu.my/myweb/mohdfadzli/mitc2013.htm')
 })
 
 test('upload png', async ({ page }) => {
@@ -20,8 +20,7 @@ test('upload png', async ({ page }) => {
 
   const fileInput = await page.$('#file')
   await fileInput!.setInputFiles('test/test1.png')
-
-  await expect(page.getByText('hello')).toBeVisible()
+  await expect(page.locator('#content3')).toHaveText('hello')
 })
 
 test('paste qrcode image url', async ({ page }) => {
@@ -31,7 +30,7 @@ test('paste qrcode image url', async ({ page }) => {
 
   await page.locator('#parse-image-url').click()
 
-  await expect(page.getByText('hello')).toBeVisible()
+  await expect(page.locator('#content1')).toHaveText('hello')
 })
 
 test('paste qrcode image base64', async ({ page }) => {
@@ -41,5 +40,5 @@ test('paste qrcode image base64', async ({ page }) => {
 
   await page.locator('#parse-image-base64').click()
 
-  await expect(page.getByText('hello')).toBeVisible()
+  await expect(page.locator('#content2')).toHaveText('hello')
 })
