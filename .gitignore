@@ -4,3 +4,6 @@ coverage/
 .DS_Store
 yarn-error.log
 example-dist
+/test-results/
+/playwright-report/
+/playwright/.cache/
