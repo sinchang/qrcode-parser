@@ -15,7 +15,7 @@
   "jsdelivr": "./dist/qrcodeParser.umd.js",
   "module": "./dist/qrcodeParser.es.js",
   "exports": "./dist/qrcodeParser.modern.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "type": "module",
   "scripts": {
     "prepublishOnly": "npm run build",
