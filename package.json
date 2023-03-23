@@ -14,9 +14,14 @@
   "unpkg": "./dist/qrcodeParser.umd.js",
   "jsdelivr": "./dist/qrcodeParser.umd.js",
   "module": "./dist/qrcodeParser.es.js",
-  "exports": "./dist/qrcodeParser.modern.js",
   "types": "./dist/src/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/qrcodeParser.modern.js"
+    }
+  },
   "scripts": {
     "prepublishOnly": "npm run build",
     "lint": "eslint \"{src,test,example}/**/*.ts\"",
