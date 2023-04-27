@@ -1,10 +1,10 @@
 //  Ref: https://stackoverflow.com/a/16245768
 
-const b64toBlob = (
+function b64toBlob(
   b64Data: string,
   contentType = '',
   sliceSize = 512,
-): Blob => {
+): Blob {
   const byteCharacters = atob(b64Data)
   const byteArrays = []
   for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {

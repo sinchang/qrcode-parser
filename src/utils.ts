@@ -1,6 +1,6 @@
 import jsQR from 'jsqr'
 
-export const blob2text = (blob: Blob): Promise<string> => {
+export function blob2text(blob: Blob): Promise<string> {
   return new Promise((resolve, reject) => {
     const image = new Image()
     image.src = URL.createObjectURL(blob)
@@ -35,7 +35,7 @@ export const blob2text = (blob: Blob): Promise<string> => {
   })
 }
 
-export const isBase64 = (str: string): boolean => {
+export function isBase64(str: string): boolean {
   try {
     return btoa(atob(str)) === str
   }
@@ -45,7 +45,7 @@ export const isBase64 = (str: string): boolean => {
 }
 
 // Copy from https://github.com/sindresorhus/is-url-superb
-export const isUrl = (string: string): boolean => {
+export function isUrl(string: string): boolean {
   if (typeof string !== 'string')
     throw new TypeError('Expected a string')
 
