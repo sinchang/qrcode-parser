@@ -1670,6 +1670,8 @@ packages:
       '@octokit/types': 6.27.1
       before-after-hook: 2.2.2
       universal-user-agent: 6.0.0
+    transitivePeerDependencies:
+      - encoding
     dev: true
 
   /@octokit/endpoint@6.0.12:
@@ -1686,6 +1688,8 @@ packages:
       '@octokit/request': 5.6.1
       '@octokit/types': 6.27.1
       universal-user-agent: 6.0.0
+    transitivePeerDependencies:
+      - encoding
     dev: true
 
   /@octokit/openapi-types@10.1.4:
@@ -1734,8 +1738,10 @@ packages:
       '@octokit/request-error': 2.1.0
       '@octokit/types': 6.27.1
       is-plain-object: 5.0.0
-      node-fetch: 2.6.2
+      node-fetch: 2.6.12
       universal-user-agent: 6.0.0
+    transitivePeerDependencies:
+      - encoding
     dev: true
 
   /@octokit/rest@18.10.0:
@@ -1745,6 +1751,8 @@ packages:
       '@octokit/plugin-paginate-rest': 2.16.1(@octokit/core@3.5.1)
       '@octokit/plugin-request-log': 1.0.4(@octokit/core@3.5.1)
       '@octokit/plugin-rest-endpoint-methods': 5.10.2(@octokit/core@3.5.1)
+    transitivePeerDependencies:
+      - encoding
     dev: true
 
   /@octokit/types@6.27.1:
@@ -1923,6 +1931,7 @@ packages:
       semantic-release: 21.0.0
       url-join: 4.0.1
     transitivePeerDependencies:
+      - encoding
       - supports-color
     dev: true
 
@@ -5009,9 +5018,16 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /node-fetch@2.6.2:
-    resolution: {integrity: sha512-aLoxToI6RfZ+0NOjmWAgn9+LEd30YCkJKFSyWacNZdEKTit/ZMcKjGkTRo8uWEsnIb/hfKecNPEbln02PdWbcA==}
+  /node-fetch@2.6.12:
+    resolution: {integrity: sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==}
     engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      whatwg-url: 5.0.0
     dev: true
 
   /node-releases@1.1.75:
@@ -6273,6 +6289,7 @@ packages:
       signale: 1.4.0
       yargs: 17.7.1
     transitivePeerDependencies:
+      - encoding
       - supports-color
     dev: true
 
@@ -6682,6 +6699,10 @@ packages:
       is-number: 7.0.0
     dev: true
 
+  /tr46@0.0.3:
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
+    dev: true
+
   /traverse@0.6.6:
     resolution: {integrity: sha512-kdf4JKs8lbARxWdp7RKdNzoJBhGUcIalSYibuGyHJbmk40pOysQ0+QPvlkCOICOivDWU2IJo2rkrxyTK2AH4fw==}
     dev: true
@@ -6920,6 +6941,17 @@ packages:
       semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /webidl-conversions@3.0.1:
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+    dev: true
+
+  /whatwg-url@5.0.0:
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
     dev: true
 
   /which-boxed-primitive@1.0.2:
