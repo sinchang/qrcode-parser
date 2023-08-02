@@ -9,7 +9,7 @@ function b64toBlob(
   const byteArrays = []
   for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
     const slice = byteCharacters.slice(offset, offset + sliceSize)
-    const byteNumbers = new Array(slice.length)
+    const byteNumbers = Array.from<number>({ length: slice.length })
     for (let i = 0; i < slice.length; i++)
       byteNumbers[i] = slice.charCodeAt(i)
 
