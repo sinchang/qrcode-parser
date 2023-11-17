@@ -7,7 +7,7 @@ fileElement.addEventListener(
     const files: FileList = <FileList>(<HTMLInputElement>e.target).files
     qrcodeParser(files[0])
       .then((res) => {
-        document.getElementById('content3')!.innerText = res
+        document.getElementById('content3')!.textContent = res
       })
       .catch((err) => {
         // eslint-disable-next-line no-console
@@ -26,7 +26,7 @@ document.getElementById('parse-image-url')!.addEventListener(
       return
 
     qrcodeParser(url).then((res) => {
-      document.getElementById('content1')!.innerText = res
+      document.getElementById('content1')!.textContent = res
     })
   },
   false,
@@ -42,7 +42,7 @@ document.getElementById('parse-image-base64')!.addEventListener(
       return
 
     qrcodeParser(url).then((res) => {
-      document.getElementById('content2')!.innerText = res
+      document.getElementById('content2')!.textContent = res
     })
   },
   false,
