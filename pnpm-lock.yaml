@@ -15,7 +15,7 @@ devDependencies:
     version: 2.6.4(@vue/compiler-sfc@3.4.19)(eslint@8.46.0)(typescript@5.0.2)
   '@playwright/test':
     specifier: ^1.31.2
-    version: 1.31.2
+    version: 1.41.2
   '@types/node':
     specifier: ^20.0.0
     version: 20.11.20
@@ -1904,15 +1904,12 @@ packages:
       '@octokit/openapi-types': 18.0.0
     dev: true
 
-  /@playwright/test@1.31.2:
-    resolution: {integrity: sha512-BYVutxDI4JeZKV1+ups6dt5WiqKhjBtIYowyZIJ3kBDmJgsuPKsqqKNIMFbUePLSCmp2cZu+BDL427RcNKTRYw==}
-    engines: {node: '>=14'}
+  /@playwright/test@1.41.2:
+    resolution: {integrity: sha512-qQB9h7KbibJzrDpkXkYvsmiDJK14FULCCZgEcoe2AvFAS64oCirWTwzTlAYEbKaRxWs5TFesE1Na6izMv3HfGg==}
+    engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      '@types/node': 20.11.20
-      playwright-core: 1.31.2
-    optionalDependencies:
-      fsevents: 2.3.2
+      playwright: 1.41.2
     dev: true
 
   /@pnpm/config.env-replace@1.0.0:
@@ -5933,10 +5930,20 @@ packages:
       pathe: 1.1.2
     dev: true
 
-  /playwright-core@1.31.2:
-    resolution: {integrity: sha512-a1dFgCNQw4vCsG7bnojZjDnPewZcw7tZUNFN0ZkcLYKj+mPmXvg4MpaaKZ5SgqPsOmqIf2YsVRkgqiRDxD+fDQ==}
-    engines: {node: '>=14'}
+  /playwright-core@1.41.2:
+    resolution: {integrity: sha512-VaTvwCA4Y8kxEe+kfm2+uUUw5Lubf38RxF7FpBxLPmGe5sdNkSg5e3ChEigaGrX7qdqT3pt2m/98LiyvU2x6CA==}
+    engines: {node: '>=16'}
     hasBin: true
+    dev: true
+
+  /playwright@1.41.2:
+    resolution: {integrity: sha512-v0bOa6H2GJChDL8pAeLa/LZC4feoAMbSQm1/jF/ySsWWoaNItvrMP7GEkvEEFyCTUYKMxjQKaTSg5up7nR6/8A==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      playwright-core: 1.41.2
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true
 
   /pluralize@8.0.0:
