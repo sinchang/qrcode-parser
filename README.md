@@ -6,7 +6,7 @@ A pure javascript QR code decoding library, accept File object, image url, image
 
 ## Example
 
-👉 [DEMO](https://qrcode-parser.netlify.com)
+👉 [DEMO](https://qrcode-parser.netlify.app)
 
 ## Install
 
