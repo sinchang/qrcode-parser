@@ -45,7 +45,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.0.0",
     "@playwright/test": "^1.31.2",
-    "@types/node": "^20.0.0",
+    "@types/node": "^22.0.0",
     "eslint": "^9.0.0",
     "microbundle": "^0.15.0",
     "semantic-release": "^24.0.0",
