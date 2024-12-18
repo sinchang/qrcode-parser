@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test'
 test('has title', async ({ page }) => {
   await page.goto('/')
 
-  await expect(page).toHaveTitle(/Vite App/)
+  await expect(page).toHaveTitle(/qrcode-parser/)
 })
 
 test('upload jpeg', async ({ page }) => {
