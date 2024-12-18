@@ -3,36 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body, html {
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        padding: 0.5rem;
+      }
+    </style>
+    <title>qrcode-parser</title>
   </head>
   <body>
     <div class="section">
-      <h3>QR code Url</h3>
-      <input id="image-url" type="text" placeholder="QR code url here" />
-      <input type="button" id="parse-image-url" value="Decode" />
-      <p>
+      <h3 class="text-xl font-bold mb-2">QR code URL</h3>
+      <input id="image-url" type="text" placeholder="QR code URL here" class="input input-bordered input-sm w-full max-w-xs" />
+      <input class="btn btn-sm" type="button" id="parse-image-url" value="Decode" />
+      <p class="my-2">
         QR code content:
         <span id="content1"></span>
       </p>
     </div>
     <div class="section">
-      <h3>QR code Base64</h3>
-      <textarea
+      <h3 class="text-xl font-bold my-2">QR code Base64</h3>
+      <input
         id="image-base64"
-        placeholder="QR code base64 code here"
-      ></textarea>
-      <input type="button" id="parse-image-base64" value="Decode" />
-      <p>
+        type="text"
+        class="input input-bordered input-sm w-full max-w-xs"
+        placeholder="QR code Base64 code here"
+      ></input>
+      <input class="btn btn-sm" type="button" id="parse-image-base64" value="Decode" />
+    </div>
+      <p class="my-2">
         QR code content:
         <span id="content2"></span>
       </p>
     </div>
     <div class="section">
-      <h3>Upload QR code</h3>
+      <h3 class="text-xl font-bold my-2">Upload QR code</h3>
       <div id="form">
-        <input type="file" name="file" id="file" />
+        <input type="file" name="file" id="file" class="file-input file-input-bordered file-input-sm w-full max-w-xs" />
       </div>
-      <p>
+      <p class="my-2">
         QR code content:
         <span id="content3"></span>
       </p>
