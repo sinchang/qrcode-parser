@@ -20,7 +20,7 @@ importers:
         version: 1.51.1
       '@types/node':
         specifier: ^22.0.0
-        version: 22.10.2
+        version: 22.13.14
       eslint:
         specifier: ^9.0.0
         version: 9.17.0
@@ -35,7 +35,7 @@ importers:
         version: 5.7.2
       vite:
         specifier: ^6.0.0
-        version: 6.0.13(@types/node@22.10.2)(terser@5.36.0)(yaml@2.7.0)
+        version: 6.0.13(@types/node@22.13.14)(terser@5.36.0)(yaml@2.7.0)
 
 packages:
 
@@ -1236,8 +1236,8 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@22.10.2':
-    resolution: {integrity: sha512-Xxr6BBRCAOQixvonOye19wnzyDiUtTeqldOOmj3CkeblonbccA12PFwlufvRdrpjXxqnmUaeiU5EOA+7s5diUQ==}
+  '@types/node@22.13.14':
+    resolution: {integrity: sha512-Zs/Ollc1SJ8nKUAgc7ivOEdIBM8JAKgrqqUYi2J997JuKO7/tpQC+WCetQ1sypiKCQWHdvdg9wBNpUPEWZae7w==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -5693,7 +5693,7 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@22.10.2':
+  '@types/node@22.13.14':
     dependencies:
       undici-types: 6.20.0
 
@@ -5703,7 +5703,7 @@ snapshots:
 
   '@types/resolve@1.17.1':
     dependencies:
-      '@types/node': 22.10.2
+      '@types/node': 22.13.14
 
   '@types/unist@3.0.3': {}
 
@@ -7326,7 +7326,7 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 22.10.2
+      '@types/node': 22.13.14
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
@@ -9076,13 +9076,13 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite@6.0.13(@types/node@22.10.2)(terser@5.36.0)(yaml@2.7.0):
+  vite@6.0.13(@types/node@22.13.14)(terser@5.36.0)(yaml@2.7.0):
     dependencies:
       esbuild: 0.24.2
       postcss: 8.5.3
       rollup: 4.38.0
     optionalDependencies:
-      '@types/node': 22.10.2
+      '@types/node': 22.13.14
       fsevents: 2.3.3
       terser: 5.36.0
       yaml: 2.7.0
