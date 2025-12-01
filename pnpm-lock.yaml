@@ -20,7 +20,7 @@ importers:
         version: 1.56.1
       '@types/node':
         specifier: ^22.0.0
-        version: 22.18.13
+        version: 22.19.1
       eslint:
         specifier: ^9.0.0
         version: 9.32.0(jiti@2.4.2)
@@ -35,7 +35,7 @@ importers:
         version: 5.8.3
       vite:
         specifier: ^6.0.0
-        version: 6.4.1(@types/node@22.18.13)(jiti@2.4.2)(terser@5.36.0)(yaml@2.7.0)
+        version: 6.4.1(@types/node@22.19.1)(jiti@2.4.2)(terser@5.36.0)(yaml@2.7.0)
 
 packages:
 
@@ -781,8 +781,8 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@22.18.13':
-    resolution: {integrity: sha512-Bo45YKIjnmFtv6I1TuC8AaHBbqXtIo+Om5fE4QiU1Tj8QR/qt+8O3BAtOimG5IFmwaWiPmB3Mv3jtYzBA4Us2A==}
+  '@types/node@22.19.1':
+    resolution: {integrity: sha512-LCCV0HdSZZZb34qifBsyWlUmok6W7ouER+oQIGBScS8EsZsQbrtFTUrDX4hOl+CS6p7cnNC4td+qrSVGSCTUfQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -3619,7 +3619,7 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@22.18.13':
+  '@types/node@22.19.1':
     dependencies:
       undici-types: 6.21.0
 
@@ -5867,7 +5867,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite@6.4.1(@types/node@22.18.13)(jiti@2.4.2)(terser@5.36.0)(yaml@2.7.0):
+  vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(terser@5.36.0)(yaml@2.7.0):
     dependencies:
       esbuild: 0.25.11
       fdir: 6.5.0(picomatch@4.0.3)
@@ -5876,7 +5876,7 @@ snapshots:
       rollup: 4.52.5
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.18.13
+      '@types/node': 22.19.1
       fsevents: 2.3.3
       jiti: 2.4.2
       terser: 5.36.0
